@@ -41,11 +41,11 @@ function nextSequence() {
 }
 
 function checkAnswer(level) {
-    console.log(`level: ${level}`);
-    console.log(`gamePattern: ${gamePattern}`);
-    console.log(`userClickedPattern: ${userClickedPattern}`);
+    //console.log(`level: ${level}`);
+    //console.log(`gamePattern: ${gamePattern}`);
+    //console.log(`userClickedPattern: ${userClickedPattern}`);
     if (userClickedPattern[userClickedPattern.length-1] == gamePattern[userClickedPattern.length-1]) {
-        console.log("Success!");
+        //console.log("Success!");
     }
     else {
         wrongClicked();
@@ -61,7 +61,7 @@ function startOver() {
 }
 
 function wrongClicked() {
-    console.log("Wrong!");
+    //console.log("Wrong!");
         var wrong = new Audio('sounds/wrong.mp3');
         wrong.play();
         $("body").addClass("game-over");
